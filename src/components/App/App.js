@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
 import local from '../../data/local';
 import './App.css';
+import NewsContainer from '../NewsContainer/NewsContainer.js';
+
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      local
+      data: local
     }
   }
 
-  render () {
+  render() {
     return (
-      <div className="app">
-        YOUR CODE GOES HERE!
+      <div className="div div--app">
+        <NewsContainer data={this.state.data} />
       </div>
     );
   }
