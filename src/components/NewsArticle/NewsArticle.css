@@ -1,0 +1,13 @@
+.section--news-cards {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  height: auto;
+  max-width: 33%;
+}
+
+.img--card-pic {
+  height: auto;
+  max-width: 90%;
+}
