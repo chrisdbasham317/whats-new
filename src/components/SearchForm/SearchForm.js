@@ -23,7 +23,7 @@ class SearchForm extends Component{
           value={this.state.searchTerm}
           onChange={event => this.handleChange(event)}
         />
-        <button>Search Now</button>
+        <button onClick={event => this.props.searchArticles(this.state.searchTerm, event)}>Search Now</button>
       </form>
     )
   }
