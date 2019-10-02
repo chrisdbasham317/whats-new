@@ -23,6 +23,7 @@ class App extends Component {
         science: science,
         health: health
       },
+      currentCategory: local,
       data: local
     }
   }

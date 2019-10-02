@@ -1,13 +1,17 @@
 .section--news-cards {
   align-items: center;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  height: auto;
-  max-width: 33%;
+  height: 500px;
+  max-width: 48%;
+  margin-bottom: 20px;
 }
 
 .img--card-pic {
   height: auto;
-  max-width: 90%;
+  max-height: 50%;
+  min-width: 100%;
+  object-fit: stretch;
 }
