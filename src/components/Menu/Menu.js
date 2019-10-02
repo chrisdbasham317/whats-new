@@ -1,6 +1,16 @@
 import React from 'react';
 import './Menu.css'
 
-// MENU COMPONENT CODE GOES HERE
+
+
+
+const Menu = ({ text, dataSets, updateData }) => {
+  return (
+    <li
+      className={`li li--${text}`}
+      onClick={event => updateData(dataSets[text])}
+    >{text.toUpperCase()}</li> 
+  )
+}
 
 export default Menu;
