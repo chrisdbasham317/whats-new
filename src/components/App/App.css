@@ -5,9 +5,36 @@
 }
 
 .div--app {
-  display: flex;
   background: #141527;
+  display: grid;
+  grid-template-areas: 
+  "nav nav nav"
+  "menu news news"
+  "menu news news";
+  grid-template-columns: 20% 1fr 1fr;
+  grid-template-rows: 80px 1fr 1fr;
   height: 100vh;
   text-align: center;
   width: 100%;
+}
+
+.aside--menu {
+  color: #ffffff;
+  grid-area: menu;
+}
+
+.span--title {
+  color: #FEAE03;
+}
+
+.nav--search {
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  grid-area: nav;
+}
+
+.main--news-container {
+  grid-area: news;
 }
