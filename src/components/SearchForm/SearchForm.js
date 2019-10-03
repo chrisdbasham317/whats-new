@@ -11,6 +11,7 @@ class SearchForm extends Component{
 
   handleChange = event => {
     this.setState({ searchTerm: event.target.value });
+    return this.state.searchTerm === "" ? this.props.searchArticles('revertArticles', event) : null;
   }
 
   render() {
