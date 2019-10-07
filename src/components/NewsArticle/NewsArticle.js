@@ -6,7 +6,7 @@ const NewsArticle = ({ id, headline, img, description, url }) => {
     <img alt='' className='img img--card-pic' data={id} src={img} />
     <h2>{headline}</h2>
     <article>{description}</article>
-    <footer data={url}>Link to Article</footer>
+    <footer data={url}><a href={url}>Link to Article</a></footer>
   </section>
 }
 

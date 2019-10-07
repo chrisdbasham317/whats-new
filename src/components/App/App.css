@@ -21,6 +21,12 @@
 .aside--menu {
   color: #ffffff;
   grid-area: menu;
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
 }
 
 .span--title {
@@ -31,7 +37,7 @@
   color: #ffffff;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   grid-area: nav;
 }
 
