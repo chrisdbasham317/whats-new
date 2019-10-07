@@ -1,0 +1,9 @@
+li {
+  margin-bottom: 5%;
+  text-align: center;
+  width: 100%;
+}
+
+li:hover {
+  background: #FEAE03;
+}
