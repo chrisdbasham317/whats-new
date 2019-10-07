@@ -35,6 +35,11 @@
   grid-area: nav;
 }
 
+.nav .h1 {
+  font-size: 30px;
+  margin: 15px 20px;
+}
+
 .main--news-container {
   grid-area: news;
 }
