@@ -13,4 +13,11 @@ describe('SearchForm', () => {
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should update the searchTerm in state when handleChange is called', () => {
+    const mockEvent = { target: { value: 'capitol hill' } };
+    const expected = { searchTerm: 'capitol hill' };
+    wrapper.instance().handleChange(mockEvent);
+    expect(wrapper.state()).toEqual(expected);
+  });
 })
