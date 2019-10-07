@@ -25,5 +25,5 @@ describe('SearchForm', () => {
     wrapper.instance().forceUpdate();
     wrapper.find('button').simulate('click');
     expect(wrapper.instance().props.searchArticles).toHaveBeenCalled();
-  })
+  });
 })
