@@ -13,7 +13,7 @@ describe('App', () => {
 
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
-  })
+  });
 
   it('should change data sets when updateData is called', () => {
     const expected = technology;
@@ -21,5 +21,7 @@ describe('App', () => {
     wrapper.instance().updateData(technology);
     expect(wrapper.state('data')).toEqual(technology);
     expect(wrapper.state('currentCategory')).toEqual(technology);
-  })
+  });
+
+  
 })

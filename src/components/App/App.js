@@ -36,14 +36,13 @@ class App extends Component {
 
   searchArticles = (searchTerm, event) => {
     event.preventDefault();
-    let revert = this.state.currentCategory
     let casedSearch = searchTerm.toUpperCase();
-    let results = this.state.data.filter(article => {
+    let results = this.state.currentCategory.filter(article => {
       let title = article.headline.toUpperCase();
       let body = article.description.toUpperCase();
       return (title.includes(casedSearch) || body.includes(casedSearch)) ? true : false;
     })
-    return searchTerm === 'revertArticles' ? this.setState({ data: revert }) : this.setState({ data: results });
+    this.setState({ data: results });
   }
 
   render() {
