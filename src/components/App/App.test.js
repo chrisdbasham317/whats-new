@@ -29,5 +29,5 @@ describe('App', () => {
     };
     wrapper.instance().searchArticles('capitol hill', mockEvent);
     expect(wrapper.state('data').length).toEqual(1);
-  })  
+  });  
 })
