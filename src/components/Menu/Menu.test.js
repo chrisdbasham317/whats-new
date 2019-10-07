@@ -5,20 +5,14 @@ import local from '../../data/local'
 
 describe('Menu', () => {
   let wrapper
-  // const mockSearchArticles = jest.fn();
-  // const mockEvent = {
-    // target: {
-    //   value: 'capitol hill',
-    //   preventDefault: jest.fn()
-    // }
-  // };
-
+  const mockUpdateData = jest.fn();
+  
   beforeEach(() => {
     wrapper = shallow(<Menu
       key='local'
       text='local'
-      dataSets={local}
-      updateData={jest.fn()}
+      dataSets={ { local: local } }
+      updateData={mockUpdateData}
       />);
     });
 
@@ -26,4 +20,8 @@ describe('Menu', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should run updateData when button is clicked', () => {
+    wrapper.find('li').simulate('click');
+    expect(mockUpdateData).toHaveBeenCalledWith(local);
+  });
 })
