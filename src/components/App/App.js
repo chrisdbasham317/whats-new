@@ -34,10 +34,6 @@ class App extends Component {
     })
   }
 
-  handleClick = event => {
-    this.updateData(event.target.dataset.set);
-  }
-
   searchArticles = (searchTerm, event) => {
     event.preventDefault();
     let revert = this.state.currentCategory

@@ -17,7 +17,7 @@ describe('App', () => {
 
   it('should change data sets when updateData is called', () => {
     const expected = technology;
-    expect(wrapper.state()).toEqual(local);
+    expect(wrapper.state('data')).toEqual(local);
     wrapper.instance().updateData(technology);
     expect(wrapper.state('data')).toEqual(technology);
     expect(wrapper.state('currentCategory')).toEqual(technology);
