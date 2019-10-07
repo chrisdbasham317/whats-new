@@ -29,8 +29,9 @@ class App extends Component {
           currentCategory: data.local,
           data: data.local,
         });
-      });
-  }
+      })
+      .catch(console.log('error'));
+  };
 
   updateData = dataSet => {
     this.setState({
