@@ -3,6 +3,7 @@
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin-bottom: 10px;
   height: 500px;
   max-width: 48%;
@@ -12,6 +13,28 @@
 .img--card-pic {
   height: auto;
   max-height: 50%;
+  max-width: 100%;
   min-width: 100%;
   object-fit: stretch;
+}
+
+h2 {
+  margin: 4px;
+}
+
+article {
+  font-size: 1.25rem;
+  margin: 8px;
+}
+
+footer {
+  background: #B569F0;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+a {
+  color: #ffffff;
+  font-size: 1.25rem;
+  text-decoration: none;
 }
