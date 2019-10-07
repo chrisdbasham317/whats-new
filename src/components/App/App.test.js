@@ -23,5 +23,11 @@ describe('App', () => {
     expect(wrapper.state('currentCategory')).toEqual(technology);
   });
 
-  
+  it('should update state when searchArticles is ran', () => {
+    const mockEvent = {
+      preventDefault: jest.fn()
+    };
+    wrapper.instance().searchArticles('capitol hill', mockEvent);
+    expect(wrapper.state('data').length).toEqual(1);
+  })  
 })
