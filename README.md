@@ -29,7 +29,7 @@
 ## Goals and Objectives
 
 - Write a news article information site from scratch
-- IBuild React and JSX fundamental skills
+- Build React and JSX fundamental skills
 - Develop a modular and scalable code base.
 - Create a robust test suite that thoroughly tests all components
 - Incorporate the Fetch API with React lifecycle methods for data retrieval.
